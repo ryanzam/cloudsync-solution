@@ -1,24 +1,61 @@
 import React from 'react'
+import CardNav from '../components/RB/CardNav/CardNav'
+
+const logo = './cloudsync.PNG'
+const items = [
+    {
+        label: "About",
+        bgColor: "#0D0716",
+        textColor: "#fff",
+        links: [
+            { label: "Company", ariaLabel: "About Company" },
+            { label: "Get Started", ariaLabel: "Get Started" },
+        ]
+    },
+    {
+        label: "Features",
+        bgColor: "#170D27",
+        textColor: "#fff",
+        links: [
+            { label: "Collaboration", ariaLabel: "Collaboration" },
+            { label: "Automation", ariaLabel: "Automation" },
+            { label: "Analytics", ariaLabel: "Analytics" }
+        ]
+    },
+    {
+        label: "Pricing",
+        bgColor: "#170A00",
+        textColor: "#fff",
+        links: [
+            { label: "Basic", ariaLabel: "Basic" },
+            { label: "Pro", ariaLabel: "Professional" },
+            { label: "Enterprise", ariaLabel: "Enterprise" }
+        ]
+    },
+    {
+        label: "Contact",
+        bgColor: "#170C00",
+        textColor: "#fff",
+        links: [
+            { label: "Links", ariaLabel: "Link" },
+            { label: "Contact Us", ariaLabel: "contact us" },
+        ]
+    }
+]
 
 const Navbar = () => {
+
     return (
-        <nav className="fixed top-0 w-full bg-white shadow-md z-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between h-16">
-                    <div className="flex items-center">
-                        <h1 className="text-2xl font-bold text-gray-800">CloudSync</h1>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                        <a href="#features" className="text-gray-600 hover:text-blue-600">Features</a>
-                        <a href="#pricing" className="text-gray-600 hover:text-blue-600">Pricing</a>
-                        <a href="#contact" className="text-gray-600 hover:text-blue-600">Contact</a>
-                        <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
-                            Get Started
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        <CardNav
+            logo={logo}
+            logoAlt="Company Logo"
+            items={items}
+            baseColor="#fff"
+            menuColor="#000"
+            buttonBgColor="#111"
+            buttonTextColor="#fff"
+            ease="power3.out"
+        />
     )
 }
 
