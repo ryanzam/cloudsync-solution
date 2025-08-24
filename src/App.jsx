@@ -4,13 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Features from './components/Features'
 
 function App() {
 
   return (
-    <div className='app'>
+    <div className='w-full'>
       <Navbar />
       <Hero />
+      <Features />
     </div>
   )
 }
