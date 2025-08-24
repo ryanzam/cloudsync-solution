@@ -1,5 +1,4 @@
 import React from 'react'
-import BubbleMenu from './BubbleMenu'
 
 const Navbar = () => {
     return (
