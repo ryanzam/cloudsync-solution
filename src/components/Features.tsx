@@ -1,10 +1,11 @@
 import React from 'react'
+import TiltedCard from './RB/TiltedCard/TiltedCard';
 
 const Features = () => {
     const features = [
-        { title: "Collaboration", desc: "Real-time collaboration tools for seamless teamwork.", icon: "👥" },
-        { title: "Automation", desc: "Automate repetitive tasks to save time.", icon: "⚙️" },
-        { title: "Analytics", desc: "Gain insights with powerful analytics dashboards.", icon: "📊" },
+        { title: "Collaboration", desc: "Real-time collaboration tools for seamless teamwork.", icon: "https://img.freepik.com/free-photo/team-unity-friends-meeting-partnership-concept_53876-23043.jpg" },
+        { title: "Automation", desc: "Automate repetitive tasks to save time.", icon: "https://img.freepik.com/free-photo/smart-microchip-background-motherboard-closeup-technology-remix_53876-104233.jpg" },
+        { title: "Analytics", desc: "Gain insights with powerful analytics dashboards.", icon: "https://img.freepik.com/free-photo/data-analytics-tablet_23-2151957101.jpg" },
     ];
 
     return (
@@ -13,11 +14,22 @@ const Features = () => {
                 <h2 className="text-4xl font-bold text-center mb-12">Why Choose CloudSync?</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {features.map((feature, index) => (
-                        <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                            <div className="text-4xl mb-4">{feature.icon}</div>
-                            <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                            <p className="text-gray-600">{feature.desc}</p>
-                        </div>
+                        <TiltedCard
+
+                            imageSrc={feature.icon}
+                            altText={feature.title}
+                            captionText={feature.title}
+                            containerHeight="300px"
+                            containerWidth="300px"
+                            imageHeight="300px"
+                            imageWidth="300px"
+                            rotateAmplitude={12}
+                            scaleOnHover={1.2}
+                            showMobileWarning={false}
+                            showTooltip={true}
+                            displayOverlayContent={true} 
+                        />
+
                     ))}
                 </div>
             </div>
