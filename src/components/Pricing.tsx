@@ -28,9 +28,9 @@ const Pricing = () => {
     })
 
     return (
-        <section style={{height: '800px', width:"100%", position: 'relative'}} id="pricing" className="w-full py-20">
+        <section style={{height: '700px', position: 'relative'}} id="pricing" className="py-20 max-w-7xl mx-auto">
             <div className="mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-4xl font-bold text-center mb-12">Pricing Plans</h2>
+                <h2 className="pb-10 flex items-center before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-white dark:before:border-neutral-600 dark:after:border-neutral-600 text-4xl font-bold text-center mb-12">Pricing Plans</h2>
 
                 <InfiniteScroll
                     items={items}
