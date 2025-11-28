@@ -20,11 +20,8 @@ Built with modern web technologies, this solution offers real-time synchronizati
 - **Scalable**: Handles terabytes of data with minimal latency.
 
 ## Features
-
-- **Unified Dashboard**: A single interface to monitor and manage all synced data.
 - **Automated Backups**: Schedule recurring syncs with granular control.
 - **Conflict Resolution**: Intelligent algorithms to merge or prioritize changes.
-- **API Integration**: RESTful APIs for custom integrations and automation.
 - **Mobile-Responsive UI**: Access your sync status on any device.
 - **Extensible Plugins**: Easily add support for new cloud providers or data types.
 
@@ -33,9 +30,9 @@ Built with modern web technologies, this solution offers real-time synchronizati
 | Category       | Technologies                          |
 |----------------|---------------------------------------|
 | **Frontend**   | React 18, Vite 5, TypeScript, Tailwind CSS |
-| **Backend**    | Node.js, Express, AWS SDK (for cloud integrations) |
+| **Backend**    | Node.js, Express |
 | **Database**   | MongoDB (for metadata), Redis (for caching) |
-| **Deployment** | Vercel (frontend), AWS Lambda (backend) |
+| **Deployment** | Vercel |
 | **Testing**    | Jest, React Testing Library            |
 | **CI/CD**      | GitHub Actions                         |
 
