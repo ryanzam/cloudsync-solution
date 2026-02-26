@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <div>
+    <div className='min-h-screen max-w-xs md:max-w-full'>
       <Navbar />
       <Hero />
       <Features />

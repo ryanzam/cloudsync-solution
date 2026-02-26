@@ -10,7 +10,7 @@ const Features = () => {
 
     return (
         <section id="features" className="pb-20">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto px-8">
                 <h2 className="py-10 flex items-center before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-white dark:before:border-neutral-600 dark:after:border-neutral-600 text-4xl font-bold text-center mb-12">Why Choose CloudSync?</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {features.map((feature, index) => (
@@ -27,7 +27,7 @@ const Features = () => {
                             scaleOnHover={1.2}
                             showMobileWarning={false}
                             showTooltip={true}
-                            displayOverlayContent={true} 
+                            displayOverlayContent={true}
                         />
 
                     ))}
