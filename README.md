@@ -1,6 +1,6 @@
 # CloudSync Solution
 
-![CloudSync Logo](https://via.placeholder.com/800x200/4A90E2/FFFFFF?text=CloudSync+Solution) <!-- Replace with actual logo if available -->
+<img width="1156" height="703" alt="cloudsync" src="https://github.com/user-attachments/assets/4d077499-d202-480e-adc3-b4e107f20cb0" />
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-18.x-blue.svg)](https://reactjs.org/)
